@@ -2,42 +2,12 @@
 #root {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-grow: 1;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  grid-template-columns: repeat(4, minmax(150px, 1fr));
   grid-template-rows: repeat(6, 1fr);
-}
-
-.itemA {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 5;
-  background-color: brown;
-}
-
-.itemB {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 2 / span 1;
-  background-color: aqua;
-}
-
-.itemC {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 3;
-  grid-row-end: 5;
-  background-color: rebeccapurple;
-}
-
-.itemD {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 5;
-  grid-row-end: 6;
-  background-color: green;
 }

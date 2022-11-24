@@ -12,12 +12,15 @@ const buttonValues = [
 ]
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [calc, setCalc] = useState({
+    symbol: "",
+    num: 0,
+    res: 0,
+  })
 
   return (
-    <div className="calcContainer">
-          <div className="grid">
-          <Screen />
+          <div className="grid calc-container">
+          <Screen value={calc.num? calc.num:calc.res} />
           {buttonValues.flat().map((symbol, index) => {
             return (
               <CalcButton 
@@ -28,7 +31,6 @@ function App() {
             )}
           )}
       </div>
-    </div>
   )
 }
 
