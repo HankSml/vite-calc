@@ -1,13 +1,36 @@
-.button {
-    color:black;
-    border: 1px solid black;
+.button-outer {
+    background-color: darkgray;
+    color:white;
     text-align: center;
+    display: flex;
+    flex-grow: 1;
+    padding: 5px;
 }
 
 .evaluate {
-    background-color: orange;
+    grid-row: span 2 / auto;
+    grid-column: span 1 / auto;
 }
 
 .generic {
-    background-color: azure;
+
+    grid-row: span 1 / auto;
+    grid-column: span 1 / auto;
 }
+
+.button-inner {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.generic > .button-inner {
+    background-color: black;
+}
+
+.evaluate > .button-inner {
+    background-color: orange;
+}
+

@@ -5,8 +5,10 @@ function Screen() {
     const [numberDisplay, setNumberDisplay] = useState(0)
 
     return (
-        <div className="display">
-            <h2>Test</h2>
+        <div className="display-outer">
+            <div className="display-inner">
+                <h2>Test</h2>
+            </div>
         </div>
     )
 }

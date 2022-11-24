@@ -3,8 +3,10 @@ import './CalcButton.css';
 
 function CalcButton({symbol, type}) {
     return (
-        <div className={"button " + type}>
-            <p>{symbol}</p>
+        <div className={type + " button-outer"}>
+            <div className={"button-inner"}>
+                <h3>{symbol}</h3>
+            </div>
         </div>
     )
 }
