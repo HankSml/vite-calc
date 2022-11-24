@@ -1,4 +1,13 @@
 .button {
-    background-color: beige;
-    color:black
+    color:black;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.evaluate {
+    background-color: orange;
+}
+
+.generic {
+    background-color: azure;
 }

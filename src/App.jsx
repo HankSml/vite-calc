@@ -1,7 +1,15 @@
 import { useState } from 'react'
 import './App.css'
-import NumberDisplay from './NumberDisplay'
+import Screen from './Screen'
 import CalcButton from './CalcButton'
+
+const buttonValues = [
+  ["C", "%", "/", "*"],
+  ["7", "8", "9", "-"],
+  ["4", "5", "6", "+"],
+  ["1", "2", "3", "="],
+  ["0", ".", "DEL"]
+]
 
 function App() {
   const [count, setCount] = useState(0)
@@ -9,20 +17,16 @@ function App() {
   return (
     <div className="calcContainer">
           <div className="grid">
-          <NumberDisplay />
-          <CalcButton symbol={"C"} />
-          <CalcButton symbol={"%"} />
-          <CalcButton symbol={"/"} />
-          <CalcButton symbol={"*"} />
-          <CalcButton symbol={"7"} />
-          <CalcButton symbol={"8"} />
-          <CalcButton symbol={"9"} />
-          <CalcButton symbol={"4"} />
-          <CalcButton symbol={"5"} />
-          <CalcButton symbol={"6"} />
-          <CalcButton symbol={"1"} />
-          <CalcButton symbol={"2"} />
-          <CalcButton symbol={"3"} />
+          <Screen />
+          {buttonValues.flat().map((symbol, index) => {
+            return (
+              <CalcButton 
+                symbol = {symbol}
+                type = {symbol === "="? "evaluate":"generic"}
+                key = {index}
+              />
+            )}
+          )}
       </div>
     </div>
   )

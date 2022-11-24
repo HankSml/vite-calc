@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import './NumberDisplay.css'
+import './Screen.css'
 
-function NumberDisplay() {
+function Screen() {
     const [numberDisplay, setNumberDisplay] = useState(0)
 
     return (
@@ -11,4 +11,4 @@ function NumberDisplay() {
     )
 }
 
-export default NumberDisplay
+export default Screen
