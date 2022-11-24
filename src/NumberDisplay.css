@@ -1,0 +1,6 @@
+.display {
+    grid-column: 1 / span 4;
+    grid-row: 1;
+    justify-content: center;
+    display: flex;
+}
