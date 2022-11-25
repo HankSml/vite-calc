@@ -1,16 +1,19 @@
 .display-outer {
     grid-column: 1 / span 4;
     grid-row: 1;
+
     justify-content: center;
     display: flex;
-    background-color: darkgray;
-    color: black;
     padding: 10px;
+
+    background-color: #000000;
+    color: black;
+    border-bottom: 2px solid cornsilk;
 }
 
 .display-inner {
     border-radius: 10px;
-    background-color: rgb(137, 163, 137);
+    background-color: #317449;
     display: flex;
     flex-grow: 1;
     justify-content: right;

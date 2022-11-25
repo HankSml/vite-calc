@@ -1,7 +1,7 @@
 import { useState } from "react";
 import './CalcButton.css';
 
-function CalcButton({symbol, type}) {
+function CalcButton({symbol, type, onScreen}) {
     return (
         <div className={type + " button-outer"}>
             <div className={"button-inner"}>
