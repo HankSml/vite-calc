@@ -19,7 +19,7 @@ function handleMath(equationString) {
     });
 
     let res = parseFloat(numsArray.shift());
-    while (operatorArray[0]) {
+    while (operatorArray != []) {
         const operator = operatorArray.shift();
         const newNum = parseFloat(numsArray.shift());
 
